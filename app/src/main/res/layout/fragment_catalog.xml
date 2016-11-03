@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/qry_button"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:nextFocusDown="@id/qry_button"
+        android:text="返回上一级"
+        android:textColor="#000000"
+        android:textSize="16sp">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/qry_button"
+        android:layout_width="46dip"
+        android:layout_height="46dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dip"
+        android:nextFocusDown="@id/textback"
+        android:src="@mipmap/query" />
+
+    <EditText
+        android:id="@+id/path_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/qry_button"
+        android:layout_toLeftOf="@id/qry_button"
+        android:descendantFocusability="beforeDescendants"
+        android:drawableLeft="@mipmap/path"
+        android:drawablePadding="5dp"
+        android:ellipsize="middle"
+        android:maxLines="2"
+        android:nextFocusDown="@id/textback"
+        android:nextFocusRight="@id/qry_button"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textSize="15sp">
+        <requestFocus />
+    </EditText>
+
+    <ListView
+        android:id="@+id/listviw"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textback"
+        android:nextFocusDown="@id/path_edit"
+        android:nextFocusUp="@id/qry_button">
+
+    </ListView>
+
+</RelativeLayout>

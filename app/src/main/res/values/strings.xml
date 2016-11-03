@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">VRPlayer</string>
+    <string name="str_rename">重命名:</string>
+    <string name="str_new">新建:</string>
+    <string name="str_copy">复制到位置：</string>
+    <string name="str_move">移动到位置：</string>
+    <string name="file">文 件</string>
+    <string name="dir">文件夹</string>
+    <string name="dirAddButton">新建</string>
+    <string name="dirSetButton">设置</string>
+    <string name="dirAboutButton">关于</string>
+    <string name="open">打开方式</string>
+    <string name="zoom">缩略图片</string>
+</resources>
